@@ -15,7 +15,7 @@ class TrackerHostname extends Plugin
     public function registerEvents()
     {
         return array(
-            'Piwik.getJavascriptCode' => array(
+            'Tracker.getJavascriptCode' => array(
                 'function' => 'customizeTrackerHostname',
                 'before' => true,
             ),
